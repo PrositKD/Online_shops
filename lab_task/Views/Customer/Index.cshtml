@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form action="/Customer/register" method="post" class="form">
+    <div class="form-group">
+        <label for="customerId">Customer ID</label>
+        <input type="text" name="customerId" id="customerId" placeholder="Customer ID" class="form-control" />
+    </div>
+    @foreach (var c in Model)
+    {
+        <div class="card" style="width: 18rem; margin-bottom: 20px;">
+            <div class="card-body">
+                <h5 class="card-title">@c.pName - $@c.price</h5>
+                <input type="hidden" name="ProductId" value="@c.Id" />
+                <button type="button" class="btn btn-primary add-to-cart-btn" data-product-id="@c.Id">Add to Cart</button>
+            </div>
+        </div>
+    }
+</form>
+

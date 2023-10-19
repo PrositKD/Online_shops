@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LabTaskModel2StoreContainer" CdmEntityContainer="LabTaskEntities2">
+    <EntitySetMapping Name="Categorys">
+      <EntityTypeMapping TypeName="LabTaskModel2.Category">
+        <MappingFragment StoreEntitySet="Categorys">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cName" ColumnName="cName" />
+          <ScalarProperty Name="dCharge" ColumnName="dCharge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="LabTaskModel2.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="pName" ColumnName="pName" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="LabTaskModel2.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="LabTaskModel2.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Cid" ColumnName="Cid" />
+          <ScalarProperty Name="Pid" ColumnName="Pid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
